@@ -2,8 +2,10 @@
 import homeRouter from './domains/home/home.router';
 // Importando enrutador user
 import userRouter from './domains/user/user.router';
-// Imporntado enrutador project
-import projectRouter from './domains/project/project.router';
+
+import convoRouter from './domains/convo/convo.router';
+
+
 
 // Función que agrega rutas
 const addRoutes = (app) => {
@@ -11,8 +13,11 @@ const addRoutes = (app) => {
   app.use('/', homeRouter);
   // Agregado el enrutado de user
   app.use('/user', userRouter);
-  // Agregado el enrutado de project
-  app.use('/project', projectRouter);
+  //Agragando las convocatorias
+  app.use('/convo', convoRouter);
+
+  
+  
   return app;
 };
 
