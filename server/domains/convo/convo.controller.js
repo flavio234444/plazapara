@@ -10,7 +10,7 @@ const cons = (req, res) => {
 res.render('convo/cons');
 };
 
-const convocatoria = (req, res) => {
+const conv = (req, res) => {
 res.render('convo/conv');
 };
 
@@ -18,5 +18,5 @@ res.render('convo/conv');
 export default {
   con,
   cons,
-  convocatoria,
+  conv,
 };

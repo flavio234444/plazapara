@@ -2,7 +2,7 @@
 import { Router } from 'express';
 
 // Importando el controlador
-import convoController from './convo.controller';
+import formController from './form.controller';
 
 // Creando una isntancia del enrutador
 const router = new Router();
@@ -11,11 +11,11 @@ const router = new Router();
 // GET '/'
 // GET '/home'
 // GET '/index
-router.get('/conv', convoController.conv);
+router.get('/inicio', formController.inicio);
 
-router.get('/con', convoController.con);
+router.get('/alternativa', formController.alternativa);
 
-router.get('/cons', convoController.cons);
+router.get('/segunda', formController.segunda);
 
 
 // Exporto este tramo de ruta

@@ -1,7 +1,7 @@
 // Actions methods
 // GET "/user/login"
 const login = (req, res) => {
-  res.send("🏗 Under Construction : GET /user/login 🚧")
+  res.render('user/login');
 };
 
 // GET "/user/logout"

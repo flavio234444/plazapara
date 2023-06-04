@@ -5,6 +5,8 @@ import userRouter from './domains/user/user.router';
 
 import convoRouter from './domains/convo/convo.router';
 
+import formRouter from './domains/form/form.router';
+
 
 
 // Función que agrega rutas
@@ -16,7 +18,7 @@ const addRoutes = (app) => {
   //Agragando las convocatorias
   app.use('/convo', convoRouter);
 
-  
+  app.use('/form', formRouter);
   
   return app;
 };
