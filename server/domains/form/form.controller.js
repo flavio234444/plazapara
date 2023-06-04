@@ -14,9 +14,19 @@ const segunda = (req, res) => {
 res.render('form/segunda');
 };
 
+const act = (req, res) => {
+  res.render('form/act');
+  };
+
+
+const normal = (req, res) => {
+   res.render('form/normal');
+};
 // Controlador Home
 export default {
   inicio,
   alternativa,
   segunda,
+  act,
+  normal,
 };

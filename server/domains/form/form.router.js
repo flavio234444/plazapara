@@ -17,6 +17,10 @@ router.get('/alternativa', formController.alternativa);
 
 router.get('/segunda', formController.segunda);
 
+router.get('/act', formController.act);
+
+router.get('/normal', formController.normal);
+
 
 // Exporto este tramo de ruta
 export default router;
