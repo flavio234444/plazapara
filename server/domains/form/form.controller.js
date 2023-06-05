@@ -22,6 +22,11 @@ const act = (req, res) => {
 const normal = (req, res) => {
    res.render('form/normal');
 };
+
+const declaracion = (req, res) => {
+  res.render('form/declaracion');
+};
+
 // Controlador Home
 export default {
   inicio,
@@ -29,4 +34,5 @@ export default {
   segunda,
   act,
   normal,
+  declaracion,
 };

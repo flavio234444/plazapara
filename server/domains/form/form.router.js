@@ -21,6 +21,8 @@ router.get('/act', formController.act);
 
 router.get('/normal', formController.normal);
 
+router.get('/declaracion', formController.declaracion);
+
 
 // Exporto este tramo de ruta
 export default router;

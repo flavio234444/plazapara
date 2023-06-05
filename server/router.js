@@ -7,7 +7,7 @@ import convoRouter from './domains/convo/convo.router';
 
 import formRouter from './domains/form/form.router';
 
-
+import estaRouter from './domains/estatus/esta.router';
 
 // Función que agrega rutas
 const addRoutes = (app) => {
@@ -19,6 +19,8 @@ const addRoutes = (app) => {
   app.use('/convo', convoRouter);
 
   app.use('/form', formRouter);
+
+  app.use('/esta', estaRouter);
   
   return app;
 };
