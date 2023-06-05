@@ -9,6 +9,8 @@ import formRouter from './domains/form/form.router';
 
 import estaRouter from './domains/estatus/esta.router';
 
+import listaRouter from './domains/listas/lista.router';
+
 // Función que agrega rutas
 const addRoutes = (app) => {
   // Agregando el enrutador de home
@@ -21,6 +23,8 @@ const addRoutes = (app) => {
   app.use('/form', formRouter);
 
   app.use('/esta', estaRouter);
+
+  app.use('/list', listaRouter);
   
   return app;
 };
