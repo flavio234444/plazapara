@@ -11,6 +11,8 @@ import estaRouter from './domains/estatus/esta.router';
 
 import listaRouter from './domains/listas/lista.router';
 
+import tarRouter from './domains/tar/tarjeta.router';
+
 // Función que agrega rutas
 const addRoutes = (app) => {
   // Agregando el enrutador de home
@@ -18,13 +20,15 @@ const addRoutes = (app) => {
   // Agregado el enrutado de user
   app.use('/user', userRouter);
   //Agragando las convocatorias
-  app.use('/convo', convoRouter);
+  app.use('/convocatorias', convoRouter);
 
   app.use('/form', formRouter);
 
   app.use('/esta', estaRouter);
 
   app.use('/list', listaRouter);
+
+  app.use('/tarjeta', tarRouter);
   
   return app;
 };

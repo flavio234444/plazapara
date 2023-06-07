@@ -2,7 +2,7 @@
 import { Router } from 'express';
 
 // Importando el controlador
-import convoController from './convo.controller';
+import tarjetaController from './tarjeta.controller';
 
 // Creando una isntancia del enrutador
 const router = new Router();
@@ -11,8 +11,12 @@ const router = new Router();
 // GET '/'
 // GET '/home'
 // GET '/index
+router.get('/tarjetaone', tarjetaController.tarjetaone);
 
-router.get('/convo', convoController.convo);
+router.get('/tarjetados', tarjetaController.tarjetados);
+
+
+
 
 // Exporto este tramo de ruta
 export default router;
