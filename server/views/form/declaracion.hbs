@@ -52,7 +52,25 @@ style="font-size: 30px;">
             <td>
               <p>
                 <label>
-                  <span ><textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                  <span >
+                    <div class='input-field'>
+                      <input
+                        id='correo'
+                        name='nombre'
+                        type='text'
+                        class="validate"
+                        value="{{ project.name }}"
+                        required
+                        />
+                        <span 
+                        class="helper-text"
+                        data-error="Es necesario su Nombre con Apellidos completos"
+                        data-success="✅ Correcto"
+                        ></span>
+                        {{#if errorModel.nombre }}
+                        <span style="color: crimson;">Error: {{ errorModel.nombre }}</span>
+                         {{/if}}
+                      </div>
                   </span>
                   </label>
                   </p>  
