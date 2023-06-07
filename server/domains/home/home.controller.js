@@ -10,13 +10,10 @@ const about = (req, res) => {
 res.render('home/about');
 };
 
-const convo = (req, res) => {
-res.render('home/convo');
-};
 
 // Controlador Home
 export default {
   home,
   about,
-  convo,
+
 };

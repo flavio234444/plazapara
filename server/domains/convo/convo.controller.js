@@ -1,8 +1,8 @@
 // Actions methods
 // GET "/"
 // GET "/index"
-const con = (req, res) => {
-  res.render('convo/con');
+const convocatorias = (req, res) => {
+  res.render('convo/convocatorias');
 };
 
 // GET "/index"
@@ -10,13 +10,17 @@ const cons = (req, res) => {
 res.render('convo/cons');
 };
 
-const conv = (req, res) => {
-res.render('convo/conv');
+const convocatoria = (req, res) => {
+res.render('convo/convocatoria');
 };
 
+const convo = (req, res) => {
+  res.render('convo/convo');
+  };
 // Controlador Home
 export default {
-  con,
+  convocatorias,
   cons,
-  conv,
+  convocatoria,
+  convo,
 };

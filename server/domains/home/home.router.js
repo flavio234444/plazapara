@@ -16,7 +16,7 @@ router.get(['/', '/home', '/index'], homeController.home);
 // GET '/about
 router.get('/about', homeController.about);
 
-router.get('/convo', homeController.convo);
+
 
 
 // Exporto este tramo de ruta
