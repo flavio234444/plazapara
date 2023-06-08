@@ -5,15 +5,15 @@ body{
   }
   
   a{
-    color: #00B7FF;
+    color: #529a88;
   }
   
   h1{
-    color: teal;
+    color: rgb(125, 14, 185);
   }
 
   .card-title.add-project {
-    color: #FFF; 
+    color: #e08e8e; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     font-size: 24px;
   }

@@ -9,9 +9,9 @@ const router = Router();
 router.get('/author', (req, res)=>{ 
     //Responding to the client using res object
     res.json({
-        "name": "Jose Ezequiel",
-        "lasname": "Hernandez Lara ",
-        "age": "22 years"
+        "name": "Leonardo Flavio",
+        "lasname": "Gonzalez Reyes  ",
+        "age": "23 years"
     });
 });//function(req, res)
 
